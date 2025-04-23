@@ -1,0 +1,2 @@
+1. The error was the the values that were passed into num1 and num2 were strings. As a result, the result variable was type string, which makes sense since the value of the returned value (and the displayed value on the page) was the concatenation of the two "numbers" that were in the text boxes.
+2. To fix this issue, you can parse the values for num1 and num2 as Numbers (i.e. Number(num1) and Number(num2)). By doing this, we would force the value of the result to be number as well since both of the values are numbers and coercing them would still result in number.

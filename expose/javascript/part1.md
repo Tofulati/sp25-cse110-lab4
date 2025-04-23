@@ -1,0 +1,7 @@
+1. values added:  20
+2. final result:  20
+3. You shouldn't use var because it would be declared as a "global variable" which can be accessed outside of a function's scope. This would allow you to access the variable in different functions and could lead to variable redeclaration and conflicts.
+4. values added:  20
+5. There is an error on line 13. This is due to how result is declared. Since we used the keyword let, the variable would only be declared within the scope of the function. Since we called result outside of the function, which is outside the scope, it would return an error stating that it wasn't declared. 
+6. There is an error on line 9. This is because you can't reassign a value to a constant variable. In this case, we are reassigning result to equal the sum of num1 and num2, which you can't do for a const variable. As a result, there is an error. 
+7. There is an error on line 13. This is because of how the variable is called outside of the scope of the function (if statement). In addition, there is an issue with reassigning the const variable result (which you can't do with const variables). As a result, there is an error with both conditions and therefore, an issue on line 13.
